@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "EurekaserverApplication",
+            "request": "launch",
+            "mainClass": "com.arjmath.Eurekaserver.EurekaserverApplication",
+            "projectName": "Eurekaserver"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SecStoreApplication<SecStore>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.arjmath.SecStore.SecStoreApplication",
+            "projectName": "SecStore",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-StoreRestApplication<StoreRest>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.arjmath.StoreRest.StoreRestApplication",
+            "projectName": "StoreRest",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
