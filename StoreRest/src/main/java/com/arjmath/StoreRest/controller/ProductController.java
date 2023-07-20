@@ -35,6 +35,11 @@ public class ProductController {
     public Product getProductId(@PathVariable Long id) {
         Product product = productService.findById(id);
         product.setPort(port);
+      /*   try {
+            Thread.sleep(2000L);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } */
         boolean ok = (product != null);
         if (!ok) {
             throw new RuntimeException("No se pudo cargar el producto");

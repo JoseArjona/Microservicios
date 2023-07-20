@@ -5,7 +5,8 @@
             "name": "EurekaserverApplication",
             "request": "launch",
             "mainClass": "com.arjmath.Eurekaserver.EurekaserverApplication",
-            "projectName": "Eurekaserver"
+            "projectName": "Eurekaserver",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51793 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=Eurekaserver"
         },
         {
             "type": "java",
@@ -15,7 +16,8 @@
             "mainClass": "com.arjmath.SecStore.SecStoreApplication",
             "projectName": "SecStore",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51835 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=SecStore"
         },
         {
             "type": "java",
@@ -24,6 +26,17 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.arjmath.StoreRest.StoreRestApplication",
             "projectName": "StoreRest",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51807 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=StoreRest"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceZuulServerApplication<service-zuul-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.arjmath.servicezuulserver.ServiceZuulServerApplication",
+            "projectName": "service-zuul-server",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
